@@ -9,16 +9,25 @@ public class Main {
     static List<Flower> testListOfFLowers = new ArrayList<>();
 
     public static void main(String[] args) {
+        ArrayList<Double> test = new ArrayList<>();
+        test.add(6.6);
+        test.add(3.0);
+        test.add(5.3);
+        test.add(1.4);
+
         Scanner scanner = new Scanner(System.in);
         String root;
 
         System.out.println("Podaj sciezke pliku treningowego: ");
         root = scanner.nextLine();
         readFile(root, 0);
+        Algorithm alg = new Algorithm((ArrayList<Flower>) trainingListOfFLowers);
+        alg.vectorDistance(new Flower(test, ""), 5);
 
-        System.out.println("Podaj sciezke pliku testowego: ");
+
+        /*System.out.println("Podaj sciezke pliku testowego: ");
         root = scanner.nextLine();
-        readFile(root, 1);
+        readFile(root, 1);*/
 
     }
 
