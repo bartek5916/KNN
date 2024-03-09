@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Podaj sciezke pliku testowego: ");
         root = scanner.nextLine();
         readFile(root, 1);
-        
+
     }
 
     public static void readFile(String fileName, int value){
@@ -42,7 +42,7 @@ public class Main {
                 }
             }
         } catch (Exception e) {
-            System.out.println("File not found");
+            System.out.println("Nie znaleziono pliku");
         }
     }
 }
