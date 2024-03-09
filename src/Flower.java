@@ -18,4 +18,12 @@ public class Flower {
     public String getType() {
         return type;
     }
+
+    @Override
+    public String toString() {
+        return "Flower{" +
+                "attributes=" + attributes +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }
