@@ -13,6 +13,10 @@ public class Flower {
         this.distance = 0;
     }
 
+    public Flower(ArrayList<Double> attributes){
+        this.attributes = attributes;
+    }
+
     public ArrayList<Double> getAttributes() {
         return attributes;
     }
