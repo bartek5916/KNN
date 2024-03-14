@@ -30,7 +30,6 @@ public class Algorithm {
                     return Double.compare(o1.getDistance(), o2.getDistance());
                 }
             });
-
             if(getClassification(k).equals(testList.get(i).getType())){
                 counter++;
             }
@@ -55,7 +54,7 @@ public class Algorithm {
         while(iterator.hasNext()){
             Map.Entry<String, Integer> entry = iterator.next();
 
-            if(entry.getValue() >= max){
+            if(entry.getValue() > max){
                 classification = entry.getKey();
                 max = entry.getValue();
             }
@@ -73,5 +72,4 @@ public class Algorithm {
             trainingList.get(i).setDistance(distance);
         }
     }
-
 }
